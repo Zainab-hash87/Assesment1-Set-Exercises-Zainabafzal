@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Example</title>
+</head>
+<body>
+    <h1>Delicious Honey Garlic Chicken</h1>
+    <img src="https://www.recipetineats.com/tachyon/2018/09/Honey-Garlic-Chicken-Breast_5.jpg?resize=900%2C1260&zoom=0.72" alt="Honey Garlic Chicken" width="450">
+</body>
+</html>
