@@ -7,74 +7,94 @@
   scroll-behavior: smooth;
 }
 
+/* Body Styling */
 body {
-  background-color: #fff2e5;
+  background-color: #f5e7d8;
   color: #333;
   line-height: 1.6;
   padding-bottom: 50px;
 }
 
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Card Box Style */
+.card-box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 /* Navbar */
 .navbar {
-  background-color: #ff9966;
+  background-color: #f97951;
   color: white;
-  padding: 20px 40px;
+  padding: 30px 20px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  animation: fadeIn 1s ease-in-out;
+  gap: 15px;
 }
 
 .navbar h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: bold;
-  color: #0d1b2a;
+  font-style: italic;
+  color: #021b34;
   margin-bottom: 10px;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: white;
-  background-color: #ff704d;
-  padding: 10px 20px;
-  border-radius: 10px;
+  background-color: #373079;
+  padding: 12px 24px;
+  border-radius: 12px;
   font-weight: bold;
-  transition: all 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .nav-links li a:hover {
-  background-color: #e65c37;
-  transform: scale(1.05);
-}
+  background-color: #1e140fb8;
+ }
 
-/* Main area */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Section */
-section {
-  text-align: center;
-  padding: 30px 0;
-  animation: fadeIn 1s ease-in-out;
-}
-
-/* Section Headings */
-h2 {
-  margin: 20px 0;
+/* Headings */
+ h2 {
   font-size: 1.7rem;
   color: #0a2c4d;
-  animation: slideUp 1s ease;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs & Lists */
+p, ul {
+  font-size: 1rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+ul li {
+  margin-bottom: 8px;
 }
 
 /* Images */
@@ -83,30 +103,7 @@ section img {
   margin: 20px auto;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-section img:hover {
-  transform: scale(1.03);
-}
-
-/* Paragraphs & Lists */
-p {
-  margin: 10px 0;
-  font-size: 1rem;
-}
-
-ul {
-  margin: 10px auto;
-  padding-left: 0;
-  font-size: 1rem;
-  list-style: none;
-  text-align: left;
-  display: inline-block;
-}
-
-ul li {
-  margin-bottom: 8px;
+  max-width: 90%;
 }
 
 /* Buttons */
@@ -119,14 +116,12 @@ ul li {
   font-weight: bold;
   border-radius: 10px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  animation: fadeIn 1.2s ease-in;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
   background-color: #d9532f;
-  transform: scale(1.05);
-}
+ }
 
 /* Video Section */
 .video-container {
@@ -134,10 +129,9 @@ ul li {
   padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 20px auto;
   border-radius: 12px;
-  width: 90%;
-  max-width: 720px;
+  max-width: 90%;
 }
 
 .video-container iframe {
@@ -149,13 +143,11 @@ ul li {
   border: none;
 }
 
-/* Nutrition List */
+/* Nutrition Section */
 .nutrition-list {
   list-style: none;
   padding-left: 0;
-  margin: 0 auto;
-  display: inline-block;
-  text-align: left;
+  text-align: center;
 }
 
 .nutrition-list li {
@@ -170,8 +162,7 @@ ul li {
   padding: 30px 20px;
   margin-top: 50px;
   border-top: 5px solid #e67845;
-  animation: fadeIn 1s ease-in-out;
-}
+ }
 
 .italic-text {
   font-style: italic;
@@ -186,42 +177,25 @@ footer p {
   font-size: 0.95rem;
 }
 
-/* Responsive Nav */
+/* Responsive Design */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
 
   .nav-links {
     flex-direction: column;
     gap: 10px;
-    margin-top: 15px;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+    margin-top: 10px;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
+  .card-box {
+    padding: 20px 15px;
   }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  section img {
+    width: 100%;
   }
-}
-
+ }
