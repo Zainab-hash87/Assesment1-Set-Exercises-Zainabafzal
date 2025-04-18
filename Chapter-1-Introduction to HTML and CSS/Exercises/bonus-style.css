@@ -1,119 +1,106 @@
-/* General Reset */
+/* Reset & Font */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   /* Body Styling */
   body {
-    background: linear-gradient(135deg, #ff7f50, #ff6347);
+    background: linear-gradient(to right, #141e30, #243b55);
     color: #fff;
-    line-height: 1.6;
+    padding: 30px;
   }
   
-  /* Navigation Bar */
-  .navbar {
-    background-color: #333;
-    padding: 15px;
+  /* Header */
+  .main-header {
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .navbar h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    padding: 8px 20px;
-    border-radius: 30px;
-    transition: background 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    background-color: #ff6347;
-  }
-  
-  /* Main Content */
-  .card-box {
-    background: #fff;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 20px 0;
   }
   
-  .card-box h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  /* Cards Container */
-  .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .card h3 {
-    font-size: 1.5rem;
+  .main-header h1 {
+    font-size: 2.5rem;
     margin-bottom: 10px;
   }
   
-  .card pre {
-    background-color: #f4f4f4;
-    padding: 10px;
-    border-radius: 8px;
+  .main-header p {
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
-    color: #333;
+    color: #ccc;
+  }
+  
+  /* Card Style */
+  .card {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+  }
+  
+  th, td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: left;
+    color: #fff;
+  }
+  
+  th {
+    background: #4a90e2;
+    color: #fff;
+  }
+  
+  tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-left: 5px solid #00ffff;
+    transition: 0.3s ease;
   }
   
   /* Footer */
-  footer {
+  .main-footer {
     text-align: center;
-    background-color: #333;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: white;
+    color: #ccc;
+    padding: 20px 0;
+    border-top: 1px solid #555;
+    font-size: 0.9rem;
   }
   
-  /* Smooth Scroll Effect */
-  html {
-    scroll-behavior: smooth;
+  /* Code Blocks */
+  code {
+    background: #00000066;
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: #00ffff;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+  
+    th, td {
+      font-size: 0.9rem;
+    }
   }
   

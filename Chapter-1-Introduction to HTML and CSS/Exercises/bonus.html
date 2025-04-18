@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8">
   <title>HTML & CSS Reference Guide</title>
   <link rel="stylesheet" href="bonus-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <header>
-    <nav class="navbar">
-      <h1>HTML & CSS Reference Guide</h1>
-      <ul class="nav-links">
-        <li><a href="#html-tags">HTML Tags</a></li>
-        <li><a href="#css-properties">CSS Properties</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
-    </nav>
+  <!-- Header Section -->
+  <header class="main-header">
+    <h1>HTML &  CSS Reference Guide</h1>
+    <p>Your quick guide to mastering web basics</p>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <!-- HTML Tags Section -->
-    <section id="html-tags" class="card-box">
-      <h2>HTML Tags</h2>
-      <p>HTML tags are the building blocks of web pages. Below are the most commonly used ones:</p>
-      <div class="cards-container">
-        <div class="card">
-          <h3>&lt;h1&gt; to &lt;h6&gt;</h3>
-          <p>Used for headings. The higher the number, the smaller the text.</p>
-          <pre><code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code></pre>
-        </div>
-        <div class="card">
-          <h3>&lt;p&gt;</h3>
-          <p>Defines a paragraph of text.</p>
-          <pre><code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
-        </div>
-        <div class="card">
-          <h3>&lt;a&gt;</h3>
-          <p>Defines a hyperlink.</p>
-          <pre><code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code></pre>
-        </div>
-      </div>
-    </section>
+  <!-- HTML Tags Table -->
+  <section class="card fade-in">
+    <h2>📘 Common HTML Tags</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&lt;h1&gt;</td>
+          <td>Main heading</td>
+          <td><code>&lt;h1&gt;Title&lt;/h1&gt;</code></td>
+        </tr>
+        <tr>
+          <td>&lt;p&gt;</td>
+          <td>Paragraph</td>
+          <td><code>&lt;p&gt;Text here&lt;/p&gt;</code></td>
+        </tr>
+        <tr>
+          <td>&lt;a&gt;</td>
+          <td>Link</td>
+          <td><code>&lt;a href="#"&gt;Click me&lt;/a&gt;</code></td>
+        </tr>
+        <tr>
+          <td>&lt;img&gt;</td>
+          <td>Image</td>
+          <td><code>&lt;img src="img.jpg" alt="desc"&gt;</code></td>
+        </tr>
+        <tr>
+          <td>&lt;ul&gt;</td>
+          <td>Unordered list</td>
+          <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-    <!-- CSS Properties Section -->
-    <section id="css-properties" class="card-box">
-      <h2>CSS Properties</h2>
-      <p>CSS properties control the styling of HTML elements. Below are some commonly used ones:</p>
-      <div class="cards-container">
-        <div class="card">
-          <h3>color</h3>
-          <p>Sets the color of text.</p>
-          <pre><code>color: red;</code></pre>
-        </div>
-        <div class="card">
-          <h3>font-size</h3>
-          <p>Sets the size of the text.</p>
-          <pre><code>font-size: 16px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>background-color</h3>
-          <p>Sets the background color of an element.</p>
-          <pre><code>background-color: #f0f0f0;</code></pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="card-box">
-      <h2>About This Guide</h2>
-      <p>This guide helps you with common HTML tags and CSS properties. It’s designed to be a quick reference to keep your coding smooth and efficient.</p>
-    </section>
-
-  </main>
+  <!-- CSS Properties Table -->
+  <section class="card fade-in">
+    <h2>Essential CSS Properties</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>color</td>
+          <td>Text color</td>
+          <td><code>color: red;</code></td>
+        </tr>
+        <tr>
+          <td>background</td>
+          <td>Background styling</td>
+          <td><code>background: #f0f0f0;</code></td>
+        </tr>
+        <tr>
+          <td>margin</td>
+          <td>Outer spacing</td>
+          <td><code>margin: 10px;</code></td>
+        </tr>
+        <tr>
+          <td>padding</td>
+          <td>Inner spacing</td>
+          <td><code>padding: 15px;</code></td>
+        </tr>
+        <tr>
+          <td>border</td>
+          <td>Element border</td>
+          <td><code>border: 2px solid black;</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+ 
 
   <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Zainab's Coding Guide</p>
+  <footer class="main-footer">
+    <p>&copy; 2025 Zainab's Stylish Guide | Made with Love</p>
   </footer>
 
 </body>
