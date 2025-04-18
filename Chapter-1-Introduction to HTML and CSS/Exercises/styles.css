@@ -49,3 +49,64 @@ ul, ol {
   line-height: 1.8;
   font-size: 16px;
 }
+
+
+
+
+/* Footer Styling */
+.thank-you-footer {
+  margin-top: 40px;
+  padding: 30px;
+  background-color: #fff0e5;
+  text-align: center;
+  border-top: 2px solid #e0c4a8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thank-you-footer h2 {
+  color: #b85c38;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.thank-you-footer p {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.thank-you-footer .italic-text {
+  font-style: italic;
+}
+
+.back-to-top {
+  margin-top: 20px;
+}
+
+.back-to-top a {
+  text-decoration: none;
+  background-color: #b85c38;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top a:hover {
+  background-color: #a24728;
+}
+
+.thank-you-footer .copyright {
+  margin-top: 30px;
+  font-size: 13px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
