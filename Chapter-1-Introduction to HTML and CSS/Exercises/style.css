@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff2e5;
+  color: #333;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ff9966;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #0d1b2a;
+  margin-bottom: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  background-color: #ff704d;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #e65c37;
+  transform: scale(1.05);
+}
+
+/* Main area */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Section */
+section {
+  text-align: center;
+  padding: 30px 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Section Headings */
+h2 {
+  margin: 20px 0;
+  font-size: 1.7rem;
+  color: #0a2c4d;
+  animation: slideUp 1s ease;
+}
+
+/* Images */
+section img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+section img:hover {
+  transform: scale(1.03);
+}
+
+/* Paragraphs & Lists */
+p {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 10px auto;
+  padding-left: 0;
+  font-size: 1rem;
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: #ff704d;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: fadeIn 1.2s ease-in;
+}
+
+.btn:hover {
+  background-color: #d9532f;
+  transform: scale(1.05);
+}
+
+/* Video Section */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 720px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Nutrition List */
+.nutrition-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: left;
+}
+
+.nutrition-list li {
+  margin-bottom: 6px;
+}
+
+/* Footer */
+.thank-you-footer {
+  background-color: #ff9966;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 50px;
+  border-top: 5px solid #e67845;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+footer .btn {
+  margin-top: 15px;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+/* Responsive Nav */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
