@@ -1,0 +1,26 @@
+/* Reset everything to a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Whole Page Background & Font */
+body {
+  background: linear-gradient(to bottom, #e8f5e9, #dcedc8); /* misty green gradient */
+  font-family: 'Georgia', serif;
+  color: #2e4d32;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Magical Title */
+h1 {
+  font-size: 3rem;
+  font-family: 'Garamond', serif;
+  color: #3b7a57; /* lush forest green */
+  margin-bottom: 0.5rem;
+  text-shadow: 1px 1px #cde6c4;
+}
+
+/* Sub*
