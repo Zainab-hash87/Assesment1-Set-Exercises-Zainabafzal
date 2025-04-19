@@ -1,102 +1,163 @@
-/* 🌸 Base Styles */
+/*  General Styles */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fffaf5;
-  color: #4a4a4a;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fffaf5; /* Creamy pastel */
+  animation: fadeInZoom 1.8s ease-in-out;
   overflow-x: hidden;
-  position: relative;
+
 }
 
-/* 🌸 Nav Bar */
+/*  Nav Bar */
 nav {
-  padding: 1.5rem 0;
-  margin: 2rem auto;
-  max-width: 90%;
-  border: 2px solid #d3e4cd; /* greenish pastel */
-  border-left: 6px solid #f7b7c3; /* soft pink accent */
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #f8d5e3, #d7f5db);
+  border-bottom: 5px solid #d4a5c6; /* slightly broader */
+  padding: 1rem 2rem;
   text-align: center;
+  animation: fadeInSoft 2s ease;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #c26b8a;
+
+nav h1 {
+  color: #a4508b;
   margin: 0;
+  font-size: 2rem;
+  text-shadow: 1px 1px #ffffff;
 }
 
 .subheading {
-  font-size: 1.1rem;
-  color: #6b8e7d;
-  font-style: italic;
+
   margin-top: 0.3rem;
+  color: #5a7265;
+  font-size: 1rem;
 }
 
-/* 🌸 Gallery */
+/*  Gallery Layout */
 .gallery-row {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  padding: 2rem;
-  z-index: 2;
-  position: relative;
+  align-items: flex-start;
+  gap: 1.5rem; 
+  padding: 2rem 1rem;
+  animation: fadeInSoft 2.2s ease;
 }
 
 .image-card, .video-card {
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 20px;
-  padding: 1rem;
   width: 300px;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(180, 150, 180, 0.25);
+  background-color: #ffffffd9;
   transition: transform 0.4s ease;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+
 }
 
 .image-card:hover, .video-card:hover {
-  transform: translateY(-8px);
+  transform: scale(1.03);
 }
 
-.tall img {
-  height: 500px;
-  object-fit: cover;
-  border-radius: 12px;
+.image-card img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+
 }
 
 .video-card iframe {
-  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 20px;
 }
 
 .license {
   font-size: 0.75rem;
-  margin-top: 0.5rem;
-  color: #888;
+  text-align: center;
+  color: #999;
+  margin-top: 0.4rem;
 }
 
-/* 🌸 Floating Petals */
-.petal-container::before,
-.petal-container::after {
-  content: '';
+/*  Footer */
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #fceff5;
+  border-top: 2px dashed #a2c3a4;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #6b6b6b;
+  font-size: 0.95rem;
+  animation: fadeInFooter 2s ease-in;
+}
+
+.footer-note {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+/*  Page Load Animations */
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInSoft {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*  Floating Sakura Petals */
+.petal {
   position: fixed;
   top: -50px;
-  width: 100%;
-  height: 100%;
-  background-image: url('https://pngimg.com/uploads/sakura/sakura_PNG86706.png');
-  background-size: 40px;
-  animation: petals 20s linear infinite;
-  opacity: 0.3;
+  width: 30px;
+  height: 30px;
+  background: url('https://pngimg.com/uploads/sakura/sakura_PNG132.png') no-repeat center/contain;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
+  opacity: 0.8;
+  animation: fall linear infinite;
 }
 
-.petal-container::after {
-  animation-delay: 10s;
-  opacity: 0.2;
-}
+.petal1 { left: 10%; animation-duration: 12s; animation-delay: 0s; }
+.petal2 { left: 30%; animation-duration: 15s; animation-delay: 3s; }
+.petal3 { left: 50%; animation-duration: 18s; animation-delay: 6s; }
+.petal4 { left: 70%; animation-duration: 14s; animation-delay: 1s; }
+.petal5 { left: 90%; animation-duration: 16s; animation-delay: 2s; }
 
-@keyframes petals {
-  0% { background-position: 0 -100px; }
-  100% { background-position: 0 100vh; }
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
 }
