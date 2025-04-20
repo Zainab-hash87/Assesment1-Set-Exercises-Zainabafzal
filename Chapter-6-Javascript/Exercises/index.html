@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⛽ Petrol Calculator 🚀</title>
+  <!-- Link to external CSS for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Main container holding all the content -->
+  <div class="container">
+    <!-- Side information with a neon-style header and description -->
+    <div class="side-info">
+      <h1>⛽ Petrol Cost Calculator 🚀</h1>
+      <p>Plan your fuel budget in a breeze.</p>
+    </div>
+
+    <!-- Main calculator card with glass/neon effect for modern look -->
+    <div class="calculator glass">
+      <!-- Input for the cost per liter of petrol -->
+      <label for="cost">🔋 Cost per Liter (£)</label>
+      <!-- 'oninput' ensures the calculation is updated in real-time -->
+      <input
+        type="number"
+        id="cost"
+        value="1.72"
+        step="0.01"
+        oninput="calculateTotal()"
+      />
+
+      <!-- Input for the number of liters of petrol purchased -->
+      <label for="liters">⛽ Liters Purchased</label>
+      <input
+        type="number"
+        id="liters"
+        value="0"
+        step="0.1"
+        oninput="calculateTotal()"
+      />
+
+      <!-- Button to trigger the total cost calculation -->
+      <button onclick="calculateTotal()">Calculate</button>
+
+      <!-- Result display showing the total cost of the petrol -->
+      <p id="result">Total Cost: £0.00</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to calculate the total cost based on cost per liter and number of liters
+    function calculateTotal() {
+      // Parse input values or set to 0 if input is invalid
+      const cost = parseFloat(document.getElementById('cost').value) || 0;
+      const liters = parseFloat(document.getElementById('liters').value) || 0;
+      
+      // Multiply cost per liter by the number of liters to get total cost
+      const total = cost * liters;
+      
+      // Update the result paragraph with the formatted total cost
+      document.getElementById('result').textContent = `Total Cost: £${total.toFixed(2)}`;
+    }
+  </script>
+</body>
+</html>
