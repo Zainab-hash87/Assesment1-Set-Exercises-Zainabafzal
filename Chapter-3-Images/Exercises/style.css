@@ -1,72 +1,91 @@
+/*  Base Body Styling - Sets the foundation for your whole page */
 body {
-  background-color: #fce4ec; /* creamy soft pink */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  background-color: #fce4ec; /* Creamy soft pink background for a delicate vibe */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Smooth and modern font */
+  text-align: center; /* Center-aligns all the content */
+  margin: 0; /* Removes default browser margin */
+  padding: 0; /* Removes default padding */
 }
 
+/*  Glamorous Animated Heading - The main title with sparkle! */
 h1 {
-  color: #b76e79; /* rose gold shade */
-  font-size: 42px;
-  margin-top: 20px;
-  text-decoration: underline;
+  color: #b76e79; /* A rich rose gold shade for luxury feel */
+  font-size: 42px; /* Big and bold */
+  margin-top: 20px; /* Space from the top of the page */
+  text-decoration: underline; /* Underlines for emphasis */
+  text-shadow: 2px 2px 6px #f7d9c4, 0 0 10px gold; /* Soft glowing effect */
+  animation: fadeInUp 1.5s ease-out; /* Smooth entrance animation */
 }
 
+/*  Subheading - Slightly smaller but still stylish */
 h2 {
-  font-size: 26px;
-  color: #a04f5a;
+  font-size: 26px; /* A bit smaller than h1 */
+  color: #a04f5a; /* A deeper pink tone */
+  animation: fadeInUp 1.8s ease-out; /* Enters a bit after the main heading */
 }
 
+/*  Image Section Container - Wraps all the image cards */
 .image-container {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 30px;
-  flex-wrap: wrap;
+  display: flex; /* Lays items side-by-side */
+  justify-content: center; /* Centers the items horizontally */
+  gap: 25px; /* Space between each figure/card */
+  padding: 30px; /* Space inside the container */
+  flex-wrap: wrap; /* Makes layout responsive by allowing wrap */
 }
 
+/*  Individual Image Cards - Each figure has its own styling */
 figure {
-  background-color: #ffe9f0;
-  border-radius: 20px;
-  box-shadow: 0 10px 18px rgba(255, 140, 160, 0.4);
-  overflow: hidden;
-  max-width: 300px;
-  transition: transform 0.3s ease;
+  background-color: #ffe9f0; /* Light pink for soft background */
+  border-radius: 20px; /* Rounded corners for a soft look */
+  box-shadow: 0 10px 18px rgba(255, 140, 160, 0.4); /* Soft shadow for depth */
+  overflow: hidden; /* Ensures nothing spills outside the rounded corners */
+  max-width: 300px; /* Prevents the card from getting too wide */
+  transition: transform 0.3s ease; /* Smooth scale effect on hover */
+  animation: fadeInUp 2s ease-out; /* Animates each figure when it loads */
 }
 
+/*  Hover Effect on Image Cards - Slight pop and glow on hover */
 figure:hover {
-  transform: scale(1.03);
-  filter: brightness(105%) contrast(110%) saturate(110%);
+  transform: scale(1.03); /* Makes the card slightly bigger */
+  filter: brightness(105%) contrast(110%) saturate(110%); /* Makes it pop with more color and light */
 }
 
+/*  Image Styling - Keeps all images responsive */
 img {
-  width: 100%;
-  height: auto;
-  display: block;
+  width: 100%; /* Makes image take full width of its container */
+  height: auto; /* Maintains the image's original aspect ratio */
+  display: block; /* Removes extra space below image */
 }
 
+/*  Caption Styling - The credit box below each image */
 figcaption {
-  padding: 12px;
-  font-size: 14px;
-  background-color: #ffcdd2;
-  border-top: 2px solid #f06292;
+  padding: 12px; /* Space inside the caption box */
+  font-size: 14px; /* Small, clean text */
+  background-color: #ffcdd2; /* Light coral-pink background */
+  border-top: 2px solid #f06292; /* A stylish border to separate caption */
 }
 
+/*  Link Styling inside Caption */
 figcaption a {
-  text-decoration: none;
-  color: #5d1049;
-  display: inline-block;
+  text-decoration: none; /* Removes underline */
+  color: #5d1049; /* Deep plum for classy links */
+  display: inline-block; /* Allows better spacing and hover behavior */
 }
 
+/*  Link Hover Effect */
 figcaption a:hover {
-  text-decoration: underline;
-  color: #880e4f;
+  text-decoration: underline; /* Adds underline when hovered */
+  color: #880e4f; /* Changes to a more intense plum shade */
 }
 
-.credit-link {
-  font-size: 13px;
-  margin-top: 5px;
-  display: block;
-  color: #6a1b4d;
+/*  Animation - Defines fadeInUp animation for elegant entry effect */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0; /* Starts invisible */
+    transform: translateY(40px); /* Starts slightly lower */
+  }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to normal position */
+  }
 }
