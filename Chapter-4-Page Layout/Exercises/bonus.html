@@ -1,66 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Sets the title of the webpage, shown in the browser tab -->
   <title>Study Planner - Web Development</title>
+   <!-- Links an external CSS file for styling the page -->
   <link rel="stylesheet" href="bonus-style.css" />
+ 
 </head>
 <body>
-  <!-- Header -->
+
+
+  <!-- Main body of the HTML document -->
+
+  <!-- Header section containing the page title and subtitle -->
   <header>
-    <h1> <u>Study Planner</u> </h1>
-    <p>Web Development Module - CyberSecurity </p>
+
+    <!-- Main heading with underline, describes the page purpose -->
+    <h1><u>Study Planner</u></h1> 
+    
+    <!-- Subheading showing course/module context -->
+    <p>Web Development Module - CyberSecurity</p> 
+   
   </header>
 
-  <!-- Navigation -->
+  <!-- Navigation bar with clickable links to different sections -->
   <nav>
     <ul>
+      <!-- Unordered list containing navigation items -->
       <li><a href="#">Home</a></li>
+      <!-- Link to homepage (currently placeholder) -->
       <li><a href="#">Tasks</a></li>
+      <!-- Link to tasks section -->
       <li><a href="#">Calendar</a></li>
+      <!-- Link to calendar -->
       <li><a href="#">Goals</a></li>
+      <!-- Link to goals -->
       <li><a href="#">Resources</a></li>
+      <!-- Link to resources -->
     </ul>
   </nav>
 
-  <!-- Main -->
+  <!-- Main layout content of the page -->
   <main>
+    <!-- Each section below represents a content column -->
+
+    <!-- To-Do column for listing pending study activities -->
     <section class="column to-do">
       <h2>To-Do</h2>
-      <article><h3>HTML Practice</h3><p>Understand semantic tags.</p></article>
-      <article><h3>Flexbox Layout</h3><p>Practice page structure.</p></article>
+      <!-- Column heading -->
+      <article>
+        <h3>HTML Practice</h3>
+        <p>Understand semantic tags.</p>
+      </article>
+      <!-- Individual task with description -->
+
+      <article>
+        <h3>Flexbox Layout</h3>
+        <p>Practice page structure.</p>
+      </article>
     </section>
 
+    <!-- Calendar column for upcoming events -->
     <section class="column calendar">
       <h2>Calendar</h2>
-      <article><h3>April 21</h3><p>Mock review session.</p></article>
-      <article><h3>April 25</h3><p>Assignment draft due.</p></article>
+      <!-- Column heading -->
+      <article>
+        <h3>April 21</h3>
+        <p>Mock review session.</p>
+      </article>
+      <article>
+        <h3>April 25</h3>
+        <p>Assignment draft due.</p>
+      </article>
     </section>
 
+    <!-- Daily Goals column to keep track of small goals -->
     <section class="column goals">
       <h2>Daily Goals</h2>
-      <article><h3>30 Mins Reading</h3><p>Go through Flexbox article.</p></article>
-      <article><h3>Code Practice</h3><p>Build simple layout.</p></article>
+      <article>
+        <h3>30 Mins Reading</h3>
+        <p>Go through Flexbox article.</p>
+      </article>
+      <article>
+        <h3>Code Practice</h3>
+        <p>Build simple layout.</p>
+      </article>
     </section>
 
+    <!-- Resources column for helpful links or tools -->
     <section class="column resources">
       <h2>Resources</h2>
-      <article><h3>MDN Web Docs</h3><p>Learn HTML, CSS, JS officially.</p></article>
-      <article><h3>CSS Tricks</h3><p>Tips & examples on layouts.</p></article>
+      <article>
+        <h3>MDN Web Docs</h3>
+        <p>Learn HTML, CSS, JS officially.</p>
+      </article>
+      <article>
+        <h3>CSS Tricks</h3>
+        <p>Tips & examples on layouts.</p>
+      </article>
     </section>
 
+    <!-- Reminders column with option to add new items -->
     <section class="column reminders">
       <h2>Reminders</h2>
-      <article><h3>Submit Badge</h3><p>Upload Cisco badge before deadline.</p></article>
-      <article><h3>Group Meeting</h3><p>Friday 3 PM in Lab.</p></article>
+      <article>
+        <h3>Submit Badge</h3>
+        <p>Upload Cisco badge before deadline.</p>
+      </article>
+      <article>
+        <h3>Group Meeting</h3>
+        <p>Friday 3 PM in Lab.</p>
+      </article>
       <button>+ Add Reminder</button>
+      <!-- Button to allow users to add a new reminder -->
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer section at the bottom of the page -->
   <footer>
     <p>&copy; 2025 CyberSecurity. All rights reserved.</p>
+    <!-- Footer text with copyright -->
   </footer>
+
 </body>
 </html>

@@ -1,67 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <!-- Metadata for the page -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Title shown in the browser tab -->
   <title>Jab We Met - IMDb Style Page</title>
+ <!-- Links to the external CSS stylesheet -->
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
-  <!-- Blurred background -->
+  <!-- Main body content starts here -->
+
+  <!-- Blurred background layer for aesthetic effect -->
   <div class="blur-background"></div>
 
+  <!-- Container for the entire content of the page -->
   <div class="page-container">
-    <!-- Navigation bar -->
+
+    <!-- Navigation bar for quick links to different sections -->
     <nav class="navbar">
       <ul>
+        <!-- Navigation links with anchor tags to scroll to sections -->
         <li><a href="#poster">Poster</a></li>
         <li><a href="#storyline">Storyline</a></li>
         <li><a href="#trailer">Trailer</a></li>
         <li><a href="#cast">Cast</a></li>
         <li><a href="#awards">Awards</a></li>
         <li><a href="#imdb" target="_blank">IMDb</a></li>
+        <!-- IMDb opens in a new tab -->
       </ul>
     </nav>
 
-    <!-- Header section with the movie title -->
+    <!-- Header section displaying the movie title -->
     <header>
       <h1>Jab We Met (2007)</h1>
     </header>
 
-    <!-- Main content section -->
+    <!-- Main content section containing all movie details -->
     <main class="container">
-      <!-- Poster Section -->
+
+      <!-- Movie poster section with image -->
       <section class="poster-section" id="poster">
-        <img src="https://m.media-amazon.com/images/M/MV5BYmEyMmYyOTgtM2I0My00M2QyLWJhYTYtNmNhOGYzMzQwMjVhXkEyXkFqcGc@._V1_UY1200_CR99,0,630,1200_AL_.jpg" 
-        alt="Jab We Met Poster" class="poster" />
+        <img 
+          src="https://m.media-amazon.com/images/M/MV5BYmEyMmYyOTgtM2I0My00M2QyLWJhYTYtNmNhOGYzMzQwMjVhXkEyXkFqcGc@._V1_UY1200_CR99,0,630,1200_AL_.jpg" 
+          alt="Jab We Met Poster" 
+          class="poster" />
       </section>
 
-      <!-- Movie Details Section -->
+      <!-- Movie details like rating, genre, duration, etc. -->
       <section class="details-section">
-        <!-- IMDb Rating -->
+
+        <!-- IMDb rating of the movie -->
         <p class="rating"> <u> IMDb Rating: </u> <strong>7.9/10</strong></p>
+
+        <!-- Genre of the movie -->
         <p><strong>Genres:</strong> Romance, Comedy, Drama</p>
+
+        <!-- Total runtime of the movie -->
         <p><strong>Runtime:</strong> 138 minutes</p>
+
+        <!-- Release date of the movie -->
         <p><strong>Release Date:</strong> October 26, 2007</p>
+
+        <!-- Language of the movie -->
         <p><strong>Language:</strong> Hindi</p>
+
+        <!-- Country where the movie was produced -->
         <p><strong>Country:</strong> India</p>
 
-        <!-- Storyline Section -->
+        <!-- Storyline section -->
         <h2 id="storyline"><b>Storyline</b></h2>
         <p class="description">
           Aditya Kashyap, a disheartened businessman, boards a train to nowhere and meets Geet Dhillon, a spirited girl running away to elope. What begins as an accidental encounter becomes an emotional, humorous, and transformative journey for both of them.
         </p>
 
-        <!-- Trailer Section -->
+        <!-- Trailer section with embedded video -->
         <h2 id="trailer"><b>Official Trailer</b></h2>
         <div class="trailer">
-          <iframe src="https://www.imdb.com/video/imdb/vi3972250393/imdb/embed" width="100%" height="315" allowfullscreen frameborder="0"></iframe>
+          <!-- Embedded IMDb trailer video -->
+          <iframe 
+            src="https://www.imdb.com/video/imdb/vi3972250393/imdb/embed" 
+            width="100%" 
+            height="315" 
+            allowfullscreen 
+            frameborder="0">
+          </iframe>
         </div>
 
-        <!-- Main Cast Section -->
+        <!-- Main cast and crew information -->
         <h2 id="cast"><b>Main Cast</b></h2>
         <ul class="info-list">
           <li><strong>Kareena Kapoor</strong> as Geet Dhillon</li>
@@ -71,7 +99,7 @@
           <li><strong>Cinematography:</strong> Natarajan Subramaniam</li>
         </ul>
 
-        <!-- Awards Section -->
+        <!-- Awards won by the film -->
         <h2 id="awards"><b>Awards</b></h2>
         <ul class="info-list">
           <li>Filmfare Award for Best Actress - Kareena Kapoor</li>
@@ -79,19 +107,25 @@
           <li>Screen Award for Best Dialogues</li>
         </ul>
 
-        <!-- Famous Dialogue Section -->
+        <!-- Famous dialogue from the film -->
         <h2><b>Famous Dialogue</b></h2>
-        <p class="dialogue"><em>"Main apni favourite hoon!"</em>  <strong> - Geet </strong> </p>
-        <!-- IMDb Link -->
+        <p class="dialogue">
+          <em>"Main apni favourite hoon!"</em>  
+          <strong> - Geet </strong> 
+        </p>
+
+        <!-- Link to view the movie on IMDb -->
         <a id="imdb" href="https://www.imdb.com/title/tt1093370/" class="btn" target="_blank">View on IMDb</a>
       </section>
     </main>
 
-    <!-- Footer Section -->
+    <!-- Footer section at the bottom -->
     <footer>
       <p>&copy; 2025 IMDb Tribute Page | Designed by Zainab</p>
     </footer>
-  </div>
+
+  </div> <!-- End of page-container -->
+
 </body>
 
 </html>

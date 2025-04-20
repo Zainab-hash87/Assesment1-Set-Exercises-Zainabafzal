@@ -1,153 +1,152 @@
-/* === Background and Layout === */
+/* === Background and Layout === */ 
 body {
-    background-color: rgba(0, 0, 0, 0.9); /* Dark overlay for contrast over blurred background */
+    background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent black background for contrast */
     height: 100%;
     width: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #fff;
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set default font */
+    color: #fff; /* White text for dark background */
 
-    /* === NEW === Body ko flex container banaya to push footer at bottom === */
+    /* Make body a flex container to allow footer to stick to the bottom */
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure full viewport height */
 }
 
+/* Full-screen blurred background image */
 .blur-background {
-    position: fixed;
+    position: fixed; /* Stays in place while scrolling */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('https://i.pinimg.com/1200x/40/0d/55/400d556a828a559d316f98a8cd1e2131.jpg');
-    background-size: cover;
-    background-position: center;
-    filter: blur(8px); /* Blurred effect for background image */
-    z-index: -1; /* Behind main content */
+    background-image: url('https://i.pinimg.com/1200x/40/0d/55/400d556a828a559d316f98a8cd1e2131.jpg'); /* Background image */
+    background-size: cover; /* Cover entire area */
+    background-position: center; /* Center the image */
+    filter: blur(8px); /* Apply blur effect */
+    z-index: -1; /* Send it behind all content */
 }
 
+/* Main content wrapper */
 .page-container {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Keep content above the blurred background */
     padding: 20px;
-
-    /* === NEW === Flex 1 to make it grow and push footer down === */
-    flex: 1;
+    
+    flex: 1; /* Fills remaining space to push footer down */
 }
 
 /* === Navbar === */
 .navbar {
-    background-color: #000;
+    background-color: #000; /* Black navbar background */
     padding: 15px 20px;
     text-align: center;
-    position: sticky;
+    position: sticky; /* Stick to top on scroll */
     top: 0;
-    z-index: 1000; /* Keeps navbar on top while scrolling */
+    z-index: 1000; /* Stay above all other content */
 }
 
 .navbar ul {
-    list-style: none;
+    list-style: none; /* Remove bullets */
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center align items */
+    gap: 20px; /* Space between links */
+    flex-wrap: wrap; /* Wrap on smaller screens */
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
     font-weight: bold;
     padding: 10px 16px;
-    border: 2px solid #ffe97f;
+    border: 2px solid #ffe97f; /* Golden border */
     border-radius: 8px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover transition */
 }
 
 .navbar a:hover {
-    background-color: #ffe97f;
-    color: black;
-    box-shadow: 0 0 10px #ffe97f;
+    background-color: #ffe97f; /* Golden hover background */
+    color: black; /* Text becomes black on hover */
+    box-shadow: 0 0 10px #ffe97f; /* Glow effect */
 }
 
-/* Highlight current page */
+/* Highlight for current/active page */
 .navbar a.active {
     background-color: #ffe97f;
     color: #000;
-    pointer-events: none; /* Prevents clicking on current page */
+    pointer-events: none; /* Disable clicking on the current page link */
 }
 
 /* === Headings === */
 h1, h2, h3 {
-    color: #ffe97f;
+    color: #ffe97f; /* Golden color */
     text-align: center;
     margin-top: 20px;
 }
 
 h2 {
     text-decoration: underline;
-    text-underline-offset: 6px;
-    text-decoration-thickness: 2px;
+    text-underline-offset: 6px; /* Space between text and underline */
+    text-decoration-thickness: 2px; /* Thicker underline */
 }
 
 /* === Content Container === */
 .container {
-    max-width: 1000px;
-    margin: auto;
+    max-width: 1000px; /* Limit content width */
+    margin: auto; /* Center horizontally */
     padding: 20px;
-    line-height: 1.6;
+    line-height: 1.6; /* Line spacing */
 
-    /* === NEW === Content ko center align kiya like for Characters etc. === */
-    text-align: center;
+    text-align: center; /* Center align text */
 }
 
 /* === Info Lists === */
 .info-list {
-    list-style: none;
+    list-style: none; /* Remove bullets */
     padding-left: 0;
-    line-height: 1.8;
+    line-height: 1.8; /* Spacing between items */
 }
 
 /* === Button === */
 .btn {
     display: inline-block;
-    background-color: #ffe97f;
-    color: #000;
+    background-color: #ffe97f; /* Golden background */
+    color: #000; /* Black text */
     padding: 10px 20px;
     font-weight: bold;
     border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .btn:hover {
-    background-color: #fff3b0;
+    background-color: #fff3b0; /* Lighter shade on hover */
 }
 
 /* === Footer === */
 footer {
-    background-color: #000;
-    color: #fff;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
     text-align: center;
     padding: 15px 10px;
-    border-top: 3px solid #ffe97f;
+    border-top: 3px solid #ffe97f; /* Golden border line */
     font-size: 0.9rem;
 
-    /* === NEW === Yeh footer ko page ke neeche chipka deta hai === */
-    margin-top: auto;
+    margin-top: auto; /* Push footer to bottom of page */
 }
 
 /* === Fade-in Animation === */
 .fade-in {
-    animation: fadeIn 0.8s ease-out forwards;
-    opacity: 0;
-    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards; /* Animation on load */
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly lower */
 }
 
 @keyframes fadeIn {
     to {
-        opacity: 1;
-        transform: translateY(0);
+        opacity: 1; /* Fade to visible */
+        transform: translateY(0); /* Move to original position */
     }
 }

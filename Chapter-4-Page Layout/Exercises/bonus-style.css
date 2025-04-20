@@ -1,133 +1,144 @@
-/* Reset */
+/* ========== Reset ========== */
+/* Removes default margin and padding from all elements, and sets box-sizing to border-box for predictable sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
- body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9fb;
-  color: #333;
-   line-height: 1.6;
+/* ========== Body Styles ========== */
+/* Applies a clean font, sets background, text color and improves line spacing */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Sets a modern sans-serif font */
+  background-color: #f9f9fb; /* Light pastel background for clean look */
+  color: #333; /* Dark gray text color */
+  line-height: 1.6; /* Improves readability */
 }
 
-/* Header */
+/* ========== Header ========== */
+/* Styles for the top header section */
 header {
-  background-color: #c3dafe;
-  text-align: center;
-  padding: 2rem;
-  color: #1a202c;
+  background-color: #c3dafe; /* Light purple/blue background */
+  text-align: center; /* Center-aligns text */
+  padding: 2rem; /* Adds space around header content */
+  color: #1a202c; /* Dark text for contrast */
 }
 
+/* Header Title Styling */
 header h1 {
-  font-size: 2.5rem;
- }
+  font-size: 2.5rem; /* Large font size for main title */
+}
 
+/* Header Subtitle Styling */
 header p {
-  font-size: 1.1rem;
+  font-size: 1.1rem; /* Slightly larger font for subtitle */
 }
 
-/* Navigation */
+/* ========== Navigation Bar ========== */
 nav {
-  background-color: #edf2f7;
-  padding: 1rem;
+  background-color: #edf2f7; /* Light gray background for navbar */
+  padding: 1rem; /* Space inside navbar */
 }
 
- nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  gap: 2rem;
+/* Styles the navigation list (ul) */
+nav ul {
+  display: flex; /* Makes list items sit in a row */
+  justify-content: center; /* Centers the list horizontally */
+  list-style: none; /* Removes default bullet points */
+  gap: 2rem; /* Space between list items */
 }
 
+/* Styles for each link in navbar */
 nav a {
-  text-decoration: none;
-  color: #2d3748;
-  font-weight: 600;
-  transition: color 0.3s;
+  text-decoration: none; /* Removes underline */
+  color: #2d3748; /* Dark slate blue color for text */
+  font-weight: 600; /* Makes links bold */
+  transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
+/* Hover effect for links */
 nav a:hover {
-  color: #4c51bf;
+  color: #4c51bf; /* Changes to purple on hover */
 }
 
-/* Main Layout */
+/* ========== Main Layout ========== */
 main {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+  display: grid; /* Uses CSS Grid for layout */
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Responsive grid: min 220px columns */
+  gap: 1.5rem; /* Space between grid items */
+  padding: 2rem; /* Padding inside main area */
+  max-width: 1200px; /* Maximum width of content */
+  margin: auto; /* Centers the main section horizontally */
 }
 
-/* Column Base */
+/* ========== Column Base Style ========== */
 .column {
-  background-color: #ffffff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-  transition: transform 0.3s ease;
+  background-color: #ffffff; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  padding: 1.5rem; /* Space inside the box */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06); /* Soft shadow for elevation */
+  transition: transform 0.3s ease; /* Smooth animation on hover */
 }
 
+/* Hover effect for each column box */
 .column:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Slight lift when hovered */
 }
 
-/* Pastel Backgrounds per column */
-.to-do { background-color: #fcefee; }
-.calendar { background-color: #e6f7ff; }
-.goals { background-color: #fdfde7; }
-.resources { background-color: #e8f6ec; }
-.reminders { background-color: #f3efff; }
+/* ========== Unique Background Colors per Section ========== */
+.to-do { background-color: #fcefee; } /* Light pink for To-Do */
+.calendar { background-color: #e6f7ff; } /* Light blue for Calendar */
+.goals { background-color: #fdfde7; } /* Pale yellow for Goals */
+.resources { background-color: #e8f6ec; } /* Light green for Resources */
+.reminders { background-color: #f3efff; } /* Lavender/purple for Reminders */
 
-/* Headings */
+/* ========== Column Headings ========== */
 .column h2 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
+  font-size: 1.4rem; /* Medium-large headings */
+  margin-bottom: 1rem; /* Space below heading */
+  border-bottom: 2px solid #ccc; /* Underline effect */
+  padding-bottom: 0.5rem; /* Padding below heading text */
 }
 
-/* Article styles */
+/* ========== Article Boxes (Task Items) ========== */
 article {
-  margin-bottom: 1rem;
-  padding: 0.8rem;
-  border-left: 4px solid #a0aec0;
-  background-color: #ffffffa1;
-  border-radius: 6px;
+  margin-bottom: 1rem; /* Space below each article box */
+  padding: 0.8rem; /* Internal padding */
+  border-left: 4px solid #a0aec0; /* Accent border on left */
+  background-color: #ffffffa1; /* Semi-transparent white background */
+  border-radius: 6px; /* Rounded corners */
 }
 
-/* Button */
+/* ========== Button Styling ========== */
 button {
-  margin-top: 1rem;
-  background-color: #805ad5;
-  color: #fff;
-  border: none;
-  padding: 0.7rem 1.2rem;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  margin-top: 1rem; /* Space above button */
+  background-color: #805ad5; /* Purple background */
+  color: #fff; /* White text */
+  border: none; /* Removes border */
+  padding: 0.7rem 1.2rem; /* Space inside button */
+  font-size: 1rem; /* Standard readable font */
+  border-radius: 6px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover transition */
 }
 
+/* Button Hover Effect */
 button:hover {
-  background-color: #6b46c1;
+  background-color: #6b46c1; /* Darker purple on hover */
 }
 
-/* Footer */
+/* ========== Footer ========== */
 footer {
-
-  text-align: center;
-  background-color: #c3dafe;
-  padding: 1rem;
-  color: #1a202c;
+  text-align: center; /* Centers the footer text */
+  background-color: #c3dafe; /* Matches header background */
+  padding: 1rem; /* Space inside footer */
+  color: #1a202c; /* Dark text */
 }
 
-/* Responsive */
+/* ========== Responsive Design ========== */
+/* Adjusts layout for smaller screens */
 @media (max-width: 768px) {
   main {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Switches to single column */
   }
 }

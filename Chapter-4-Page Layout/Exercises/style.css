@@ -2,150 +2,150 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-color: #17072b; /* Dark purple background as requested */
-  color: #000000;
+  font-family: Arial, sans-serif; /* Setting a clean and modern font */
+  background-color: #17072b; /* Dark purple background  */
+  color: #000000; /* Text color set to black */
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  flex-direction: column; /* Aligns the content in a column */
+  min-height: 100vh; /* Ensures body covers the full height of the viewport */
   overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header styles */
 header {
-  background-color: #17072b;
-  color: #FFFFFF;
-   padding: 20px 0;
+  background-color: #17072b; /* Dark purple background for the header */
+  color: #FFFFFF; /* White text in header */
+  padding: 20px 0; /* Vertical padding for the header */
 }
 
 .header-content {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Limits the maximum width */
+  margin: 0 auto; /* Centers the content */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Aligns the header content vertically */
+  align-items: center; /* Centers the content horizontally */
 }
 
 h1 {
   font-family: Arial, sans-serif;
-  font-weight: 700;
-  text-decoration: underline;
-  margin-bottom: 20px;
-  font-size: 2.5rem;
+  font-weight: 700; /* Bold header text */
+  text-decoration: underline; /* Underlines the title */
+  margin-bottom: 20px; /* Space below the title */
+  font-size: 2.5rem; /* Sets a larger font size */
 }
 
 /* Navigation styles */
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Removes bullet points from list items */
   display: flex;
-  justify-content: center; /* Centering the navigation */
-  gap: 25px; /* More space between the items */
+  justify-content: center; /* Centers the navigation items */
+  gap: 25px; /* Adds space between the items */
 }
 
 nav a {
-  color: #FFFFFF;
-  text-decoration: none;
+  color: #FFFFFF; /* White text for the navigation links */
+  text-decoration: none; /* Removes underline from links */
   font-size: 22px; /* Increased font size for better visibility */
 }
 
 /* Main content layout */
 main {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: white;
-  margin-bottom: 20px;
+  display: flex; 
+  max-width: 1200px; /* Limits the maximum width of main content */
+  margin: 0 auto; /* Centers the content */
+  background-color: white; /* White background for main content */
+  margin-bottom: 20px; /* Adds space below the main content */
   padding: 20px 15px; /* Slightly reduced padding */
 }
 
 /* Welcome section */
 .welcome {
-  flex: 2;
+  flex: 2; /* Takes up more space than the lineup section */
   padding: 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Aligns content vertically in the welcome section */
 }
 
 .welcome h2 {
   font-family: Arial, sans-serif;
-  font-weight: 700;
-  text-decoration: underline;
-  margin-bottom: 20px;
-  font-size: 1.9rem; /* Slightly reduced font size */
+  font-weight: 700; /* Bold subtitle text */
+  text-decoration: underline; /* Underlines the subtitle */
+  margin-bottom: 20px; /* Adds space below the subtitle */
+  font-size: 1.9rem; /* Slightly reduced font size for the subtitle */
 }
 
 .welcome p {
-  margin-bottom: 20px;
-  line-height: 1.5;
+  margin-bottom: 20px; /* Adds space below the paragraph */
+  line-height: 1.5; /* Increases line height for better readability */
 }
 
 .welcome img {
-  width: 100%;
-  height: 350px; /* Reduced height slightly */
-  object-fit: cover;
-  margin-top: 10px; /* Slightly reduced margin */
+  width: 100%; /* Ensures the image takes up the full width */
+  height: 350px; /* Slightly reduced height */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  margin-top: 10px; /* Adds space above the image */
 }
 
 /* Line Up sidebar */
  .lineup {
-  background-color: #172d67;
-  color: #FFFFFF;
+  background-color: #172d67; /* Dark blue background for the sidebar */
+  color: #FFFFFF; /* White text for the sidebar */
   padding: 20px;
-  width: 380px; /* Reduced width a bit */
-  margin: 20px;
+  width: 380px; /* Reduced width for a more compact sidebar */
+  margin: 20px; /* Adds space around the sidebar */
   border-radius: 0px; /* Sharp borders */
   display: flex;
-  flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  flex-direction: column; /* Aligns content vertically */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
 
 .lineup h2 {
   font-family: Arial, sans-serif;
-  font-weight: 700;
-  text-decoration: underline;
-  margin-bottom: 20px;
-  color: #FFFFFF;
-  font-size: 1.8rem;
+  font-weight: 700; /* Bold heading for the lineup section */
+  text-decoration: underline; /* Underlines the heading */
+  margin-bottom: 20px; /* Adds space below the heading */
+  color: #FFFFFF; /* White text for the heading */
+  font-size: 1.8rem; /* Sets the font size of the heading */
 }
 
 .lineup ul {
-  list-style-type: none;
-  margin-bottom: 20px;
-  flex-grow: 1;
+  list-style-type: none; /* Removes bullet points from list items */
+  margin-bottom: 20px; /* Adds space below the list */
+  flex-grow: 1; /* Allows the list to grow and fill available space */
 }
 
 .lineup li {
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 15px; /* Adds space between list items */
+  font-size: 16px; /* Sets the font size of list items */
 }
 
 /* Image styling */
 .lineup-images {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 10px;
-  margin-top: auto;
+  display: flex; 
+  justify-content: space-between; /* Spaces images evenly */
+  width: 100%; /* Makes sure images take up the full width */
+  gap: 10px; /* Adds space between images */
+  margin-top: auto; /* Ensures images are aligned at the bottom of the sidebar */
 }
 
 .lineup-images img {
-  width: calc(50% - 5px);
+  width: calc(50% - 5px); /* Ensures the images are evenly spaced */
   height: 200px; /* Slightly reduced image height */
-  object-fit: cover;
+  object-fit: cover; /* Ensures the images cover the container without distortion */
 }
 
 /* Footer styles */
 footer {
-  background-color: #8c15e9;
-  color: #FFFFFF;
-  text-align: center;
+  background-color: #8c15e9; /* Purple background for the footer */
+  color: #FFFFFF; /* White text for the footer */
+  text-align: center; /* Centers the text in the footer */
   padding: 20px 0; /* Increased padding for a wider footer */
-  width: 100%;
+  width: 100%; /* Ensures footer takes up the full width */
   position: relative;
-  bottom: 0;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  bottom: 0; /* Keeps the footer at the bottom */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
 }
