@@ -1,0 +1,111 @@
+/* ===== Reset & Global Font Setup ===== */
+* {
+  margin: 0;                      /* Removes default margin */
+  padding: 0;                     /* Removes default padding */
+  box-sizing: border-box;        /* Includes padding & border in element's total size */
+  font-family: 'Poppins', sans-serif; /* Sets clean, modern font */
+}
+
+/* ===== Base Body Styling ===== */
+body {
+  background: linear-gradient(to right, #141e30, #243b55); /* Smooth dark gradient background */
+  color: #fff;                     /* Default text color */
+  padding: 30px;                   /* Space around body content */
+}
+
+/* ===== Header Styling ===== */
+.main-header {
+  text-align: center;             /* Center-aligns text */
+  margin-bottom: 40px;            /* Space below header */
+  background: rgba(255, 255, 255, 0.1); /* Transparent white overlay */
+  padding: 20px;                  /* Inner spacing */
+  border-radius: 15px;            /* Rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.main-header h1 {
+  font-size: 2.5rem;              /* Large title font */
+  margin-bottom: 10px;            /* Space below heading */
+}
+
+.main-header p {
+  font-size: 1rem;                /* Normal paragraph size */
+  color: #ccc;                    /* Light gray for soft contrast */
+}
+
+/* ===== Card Style (Reusable for Sections) ===== */
+.card {
+  background: rgba(255, 255, 255, 0.08); /* Light see-through box */
+  border-radius: 20px;           /* Smooth edges */
+  padding: 25px;                 /* Inner spacing */
+  margin-bottom: 40px;           /* Space between cards */
+  backdrop-filter: blur(8px);    /* Adds frosted-glass effect */
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deep shadow */
+  animation: fadeIn 1.5s ease-in-out; /* Smooth entrance animation */
+}
+
+/* ===== Tables (HTML & CSS Reference Tables) ===== */
+table {
+  width: 100%;                   /* Full width */
+  border-collapse: collapse;     /* Removes double borders */
+  margin-top: 20px;              /* Space above table */
+  overflow-x: auto;              /* Allows scrolling on small screens */
+}
+
+th, td {
+  padding: 15px;                 /* Space inside cells */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Light border */
+  text-align: left;              /* Align text to left */
+  color: #fff;                   /* Text color */
+}
+
+th {
+  background: #4a90e2;           /* Blue heading background */
+  color: #fff;                   /* White text on headings */
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+  border-left: 5px solid #00ffff; /* Neon accent */
+  transition: 0.3s ease;          /* Smooth hover transition */
+}
+
+/* ===== Footer Section ===== */
+.main-footer {
+  text-align: center;            /* Centered text */
+  color: #ccc;                   /* Light gray text */
+  padding: 20px 0;               /* Top & bottom spacing */
+  border-top: 1px solid #555;    /* Divider line */
+  font-size: 0.9rem;             /* Smaller font */
+}
+
+/* ===== Inline Code Styling (inside table examples) ===== */
+code {
+  background: #00000066;         /* Semi-transparent black */
+  padding: 3px 6px;              /* Space around code */
+  border-radius: 5px;            /* Rounded corners */
+  color: #00ffff;                /* Cyan text */
+}
+
+/* ===== Entrance Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;                  /* Start transparent */
+    transform: translateY(40px); /* Start below */
+  }
+  to {
+    opacity: 1;                  /* Fully visible */
+    transform: translateY(0);    /* Original position */
+  }
+}
+
+/* ===== Responsive Styles for Smaller Screens ===== */
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;               /* Reduce padding for smaller view */
+  }
+
+  th, td {
+    font-size: 0.9rem;           /* Smaller font for readability */
+  }
+}

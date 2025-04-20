@@ -1,25 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RGB Colour Guessing Game</title>
-    <link rel="stylesheet" href="bonus-style.css">
-  
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+<!-- Title of the game shown in browser tab -->
+  <title>RGB Colour Guessing Game</title>
+<!-- Linking the external CSS file for styling -->
+  <link rel="stylesheet" href="bonus.css" />
+ 
 </head>
 <body>
-    <div class="game-container">
-        <h2>RGB Colour Guessing Game</h2>
-        <p id="rgb-value">RGB(?, ?, ?)</p>
-        <div class="color-options">
-            <button class="color" onclick="checkAnswer(this)"></button>
-            <button class="color" onclick="checkAnswer(this)"></button>
-            <button class="color" onclick="checkAnswer(this)"></button>
-        </div>
-        <p id="message"></p>
-        <p>Lives: <span id="lives">3</span></p>
-        <button onclick="resetGame()">Play Again</button>
+    
+  <!-- Main container that holds the entire game layout -->
+  <div class="game-container">
+
+    <!-- Super fun colorful title -->
+    <h1 class="rainbow-title">
+      <span>R</span><span>G</span><span>B</span> Colour Guessing Game
+    </h1>
+
+    <!-- This is where the random RGB value will be displayed for the player to guess -->
+    <div id="rgb-value">rgb(?,?,?)</div>
+
+    <!-- Shows how many lives the player has left -->
+    <div id="lives">Lives: 3</div>
+
+    <!-- The color boxes the player can click to guess the correct color -->
+    <div class="color-options">
+      <div class="color-box" id="color1"></div>
+      <div class="color-box" id="color2"></div>
+      <div class="color-box" id="color3"></div>
     </div>
-    <script src="index.js"></script>
+
+    <!-- Feedback message shown after every guess (Correct! / Try Again!) -->
+    <div id="feedback"></div>
+
+    <!-- Score tracker, starts from 0 and increases when you guess correctly -->
+    <div id="score">Score: 0</div>
+
+    <!-- Button to restart the game after finishing or if lives run out -->
+    <button id="replay-btn">Play Again</button>
+
+  </div>
+
+  <!-- Linking the external JavaScript file to handle game logic -->
+  <script src="bonus.js"></script>
 </body>
 </html>
