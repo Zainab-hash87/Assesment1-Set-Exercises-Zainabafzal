@@ -7,7 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-weight: 400;
+  background-color: #0f0f0f;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -19,6 +19,7 @@ header {
   background-color: #17072b;
   color: #FFFFFF;
   padding: 20px 0;
+  text-align: center;
 }
 
 .header-content {
@@ -30,8 +31,8 @@ header {
 }
 
 h1 {
-  font-family: Tahoma, sans-serif;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: bold;
   text-decoration: underline;
   margin-bottom: 20px;
 }
@@ -46,7 +47,7 @@ nav ul {
 nav a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 /* Main content layout */
@@ -55,19 +56,20 @@ main {
   flex: 1;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
-  gap: 20px;
+  background-color: #ffffff;
+  padding: 0;
 }
 
 .welcome {
   flex: 2;
+  padding: 20px;
 }
 
 .welcome h2 {
-  font-family: Tahoma, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: underline;
   margin-bottom: 20px;
+  font-size: 1.8rem;
 }
 
 .welcome p {
@@ -77,55 +79,50 @@ main {
 
 .welcome img {
   width: 100%;
-  max-height: 300px;
+  height: auto;
   object-fit: cover;
-  border: 2px solid #17072b; /* Dark purple border */
-  border-radius: 0; /* Straight edges */
+  display: block;
+  border: none;
 }
 
-/* Line Up sidebar - PERFECTLY MATCHED BORDERS */
+/* Line Up sidebar */
 .lineup {
   flex: 1;
   background-color: #172d67;
   color: #FFFFFF;
-  padding: 20px;
-  border: 2px solid #17072b; /* Same as welcome image */
-  border-radius: 0; /* Straight edges */
-  margin-bottom: 20px;
-  min-height: calc(100% - 40px);
+   padding: 20px;
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .lineup h2 {
-  font-family: Tahoma, sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   text-decoration: underline;
   margin-bottom: 20px;
-  color: #FFFFFF;
+  font-size: 1.8rem;
 }
 
 .lineup ul {
-  list-style-position: inside;
+  list-style-type: none;
   margin-bottom: 20px;
 }
 
-/* Image styling - NO BORDERS */
+.lineup li {
+  margin-bottom: 10px;
+}
+
+/* Image styling */
 .lineup-images {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  gap: 4px;
+  gap: 10px;
   margin-top: auto;
 }
 
 .lineup-images img {
-  width: calc(50% - 2px);
-  max-width: 200px;
+  width: calc(50% - 5px);
   height: auto;
-  object-fit: cover;
-  border: none; /* Removed purple border completely */
+
 }
 
 /* Footer styles */
@@ -134,5 +131,5 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 10px 0;
-  margin-top: auto;
+
 }
