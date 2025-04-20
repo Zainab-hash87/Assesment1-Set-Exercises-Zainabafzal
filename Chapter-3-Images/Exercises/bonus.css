@@ -1,83 +1,44 @@
+div {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 20px;
+  margin: 25px;
+  border: 4px solid black;
+  line-height: 100px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 10px;
-    background-color: pink;
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 0px;
-  }
-  
-  h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-  
-  .image-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  figure {
-    margin: 0;
-    width: 150px;
-    height: 150px;
-    margin: 100px;
-    background-color: pink;
-    padding: 10px;
-   
-  }
-  
-  /* First image style (Purple border, red shadow) */
-  figure:nth-child(1) img {
-    border: 4px solid purple;
-    box-shadow: 10px 10px 15px red;
-  }
-  
-  /* Second image style (Green border, inset shadow) */
-  figure:nth-child(2) img {
-    border: 4px solid limegreen;
-    box-shadow: inset 10px 10px 20px rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Third image style (Rainbow layered border + rounded) */
-  figure:nth-child(3) img {
-    border: 5px solid orange;
-    box-shadow:
-      0 0 0 10px blue,
-      0 0 0 20px red,
-      0 0 0 30px green;
-    border-radius: 30px;
-    padding: 2px;
-  margin-bottom: 30px;
-  }
-  
-  /* Fourth image style (Red border with blur on caption) */
-  figure:nth-child(4) img {
-    border: 4px solid brown;
-    margin-bottom: 20px;
-  }
-  
-  
-  
-  /* All images */
-  figure img {
-    width: 250px;
-    height: 250px;
-    margin-bottom: 5px;
-  }
-  
-  figcaption {
-    
-  
-    margin-right: 10px;
-    font-size: 14px; /* Font size for caption */
-    color: #000000; /* Dark pastel color for text */
-    background-color: pink; /* Light pastel background for caption */
-    border-top: 1px solid pink; /* Border above caption */
-    text-align: left; /* Align text to left */
-  }
+  margin: 100px auto;
+  width: max-content;
+}
+
+div#A {
+  background-color: #ffffff; 
+  border: 4px solid #8a2be2;
+  box-shadow: 10px 10px 10px #ff0000e8; 
+}
+
+div#B {
+  background-color: #ffffff; 
+  border: 4px solid #4dff00; 
+  box-shadow: inset 10px 10px 10px #000000d2; 
+}
+
+div#C {
+  background-color: #ffffff; 
+  border: 6px solid #0051ff;
+  border-radius: 20px; 
+  box-shadow:
+    inset 0 0 0 4px #ffa500,
+    0 0 0 6px #ff0000, 
+    0 0 0 12px #03a821; 
+}
+
+div#D {
+  background-color: #ffffff; 
+  border: 4px solid #b30940; 
+  text-shadow: 3px 3px 3px #000000fb;
+}
