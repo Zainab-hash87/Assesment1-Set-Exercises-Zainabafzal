@@ -1,75 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Planner - Web Development Module</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Study Planner - Web Development</title>
+  <link rel="stylesheet" href="bonus-style.css" />
 </head>
 <body>
-    <!-- Header section with title -->
-    <header>
-        <h1>Study Planner</h1>
-        <p>Web Development Module - Creative Computing</p>
-    </header>
+  <!-- Header -->
+  <header>
+    <h1> <u>Study Planner</u> </h1>
+    <p>Web Development Module - CyberSecurity </p>
+  </header>
 
-    <!-- Navigation menu -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tasks">Tasks</a></li>
-            <li><a href="#calendar">Calendar</a></li>
-            <li><a href="#resources">Resources</a></li>
-        </ul>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Tasks</a></li>
+      <li><a href="#">Calendar</a></li>
+      <li><a href="#">Goals</a></li>
+      <li><a href="#">Resources</a></li>
+    </ul>
+  </nav>
 
-    <!-- Main content area -->
-    <main>
-        <!-- Left column for study tasks -->
-        <section class="column tasks">
-            <h2>Study Tasks</h2>
-            <!-- Demo item 1 -->
-            <article class="task-item">
-                <h3>HTML Semantics</h3>
-                <p>Learn about semantic HTML elements and their importance.</p>
-                <p><strong>Due:</strong> 2025-04-25</p>
-            </article>
-            <!-- Demo item 2 -->
-            <article class="task-item">
-                <h3>CSS Flexbox</h3>
-                <p>Practice building layouts using CSS Flexbox.</p>
-                <p><strong>Due:</strong> 2025-04-28</p>
-            </article>
-            <!-- Demo item 3 -->
-            <article class="task-item">
-                <h3>JavaScript Basics</h3>
-                <p>Study JavaScript variables and functions.</p>
-                <p><strong>Due:</strong> 2025-05-01</p>
-            </article>
-        </section>
+  <!-- Main -->
+  <main>
+    <section class="column to-do">
+      <h2>To-Do</h2>
+      <article><h3>HTML Practice</h3><p>Understand semantic tags.</p></article>
+      <article><h3>Flexbox Layout</h3><p>Practice page structure.</p></article>
+    </section>
 
-        <!-- Right column for additional info -->
-        <section class="column resources">
-            <h2>Resources</h2>
-            <!-- Demo item 4 -->
-            <article class="resource-item">
-                <h3>W3Schools</h3>
-                <p>Comprehensive tutorials on HTML, CSS, and JavaScript.</p>
-            </article>
-            <!-- Demo item 5 -->
-            <article class="resource-item">
-                <h3>MDN Web Docs</h3>
-                <p>Official documentation for web development technologies.</p>
-            </article>
-            <!-- Button for adding new tasks (non-interactive) -->
-            <button>Add New Task</button>
-        </section>
-    </main>
+    <section class="column calendar">
+      <h2>Calendar</h2>
+      <article><h3>April 21</h3><p>Mock review session.</p></article>
+      <article><h3>April 25</h3><p>Assignment draft due.</p></article>
+    </section>
 
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2025 Creative Computing. All rights reserved.</p>
-    </footer>
+    <section class="column goals">
+      <h2>Daily Goals</h2>
+      <article><h3>30 Mins Reading</h3><p>Go through Flexbox article.</p></article>
+      <article><h3>Code Practice</h3><p>Build simple layout.</p></article>
+    </section>
+
+    <section class="column resources">
+      <h2>Resources</h2>
+      <article><h3>MDN Web Docs</h3><p>Learn HTML, CSS, JS officially.</p></article>
+      <article><h3>CSS Tricks</h3><p>Tips & examples on layouts.</p></article>
+    </section>
+
+    <section class="column reminders">
+      <h2>Reminders</h2>
+      <article><h3>Submit Badge</h3><p>Upload Cisco badge before deadline.</p></article>
+      <article><h3>Group Meeting</h3><p>Friday 3 PM in Lab.</p></article>
+      <button>+ Add Reminder</button>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CyberSecurity. All rights reserved.</p>
+  </footer>
 </body>
 </html>
