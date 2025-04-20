@@ -1,223 +1,227 @@
-/* General Reset */
+/* ===== General Reset for All Elements ===== */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  scroll-behavior: smooth;
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Includes padding and border in total width/height */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sets modern, clean fonts */
+  scroll-behavior: smooth; /* Enables smooth scrolling on anchor link clicks */
 }
 
-/* Body Styling */
+/* ===== Body Styling ===== */
 body {
-  background-color: #f5e7d8;
-  color: #333;
-  line-height: 1.6;
-  padding-bottom: 50px;
+  background-color: #f5e7d8; /* Soft beige background for warm feel */
+  color: #333; /* Dark grey text for readability */
+  line-height: 1.6; /* Improves line spacing for better readability */
+  padding-bottom: 50px; /* Bottom space to avoid elements sticking to edge */
 }
 
-/* Container */
+/* ===== Container Class: Used to Center and Limit Width ===== */
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 960px; /* Max width of the main content */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px; /* Inner spacing */
 }
 
-/* Animation on load */
+/* ===== Keyframes Animation: Pop-In Effect on Page Load ===== */
 @keyframes popIn {
   0% {
-    opacity: 0;
-    transform: scale(0.95);
+    opacity: 0; /* Starts transparent */
+    transform: scale(0.95); /* Starts slightly smaller */
   }
   100% {
-    opacity: 1;
-    transform: scale(1);
+    opacity: 1; /* Ends fully visible */
+    transform: scale(1); /* Ends at normal size */
   }
 }
 
-/* Card Box Style */
+/* ===== Card Style Boxes ===== */
 .card-box {
-  background: #fff;
-  padding: 25px;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  margin-bottom: 40px;
-  text-align: center;
-  animation: popIn 0.6s ease forwards;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff; /* White background */
+  padding: 25px; /* Inner spacing */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+  margin-bottom: 40px; /* Space between cards */
+  text-align: center; /* Center content */
+  animation: popIn 0.6s ease forwards; /* Pop-in animation on load */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
-/* Hover effect */
+/* ===== Card Hover Effect ===== */
 .card-box:hover {
-  transform: translateY(-6px) scale(1.02);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transform: translateY(-6px) scale(1.02); /* Lifts and scales slightly */
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
 }
 
-/* Navbar */
+/* ===== Navigation Bar Styling ===== */
 .navbar {
-  background-color: #f97951;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+  background-color: #f97951; /* Bright orange background */
+  color: white; /* White text */
+  padding: 30px 20px; /* Spacing around navbar */
+  text-align: center; /* Center align */
+  display: flex; /* Flex for alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 15px; /* Space between items */
 }
 
+/* ===== Navbar Heading ===== */
 .navbar h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  font-style: italic;
-  color: #021b34;
-  margin-bottom: 10px;
+  font-size: 2rem; /* Large font size */
+  font-weight: bold; /* Bold text */
+  font-style: italic; /* Italic style */
+  color: #021b34; /* Deep navy text */
+  margin-bottom: 10px; /* Space below title */
 }
 
+/* ===== Navigation Links List ===== */
 .nav-links {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Horizontal flex layout */
+  flex-wrap: wrap; /* Wrap on small screens */
+  justify-content: center; /* Center items */
+  gap: 15px; /* Space between links */
   padding: 0;
 }
 
+/* ===== Individual Navigation Link ===== */
 .nav-links li a {
-  text-decoration: none;
-  color: white;
-  background-color: #373079;
-  padding: 12px 24px;
-  border-radius: 12px;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* Remove underline */
+  color: white; /* White text */
+  background-color: #373079; /* Dark violet background */
+  padding: 12px 24px; /* Button padding */
+  border-radius: 12px; /* Rounded buttons */
+  font-weight: bold; /* Bold link text */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover transitions */
 }
 
+/* ===== Link Hover Effect ===== */
 .nav-links li a:hover {
-  background-color: #1e140fb8;
-  transform: scale(1.05);
+  background-color: #1e140fb8; /* Darker background on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Headings */
+/* ===== Headings Styling ===== */
 h2 {
-  font-size: 1.7rem;
-  color: #0a2c4d;
-  margin-bottom: 20px;
+  font-size: 1.7rem; /* Heading size */
+  color: #0a2c4d; /* Deep blue color */
+  margin-bottom: 20px; /* Spacing below headings */
 }
 
-/* Paragraphs & Lists */
+/* ===== Text and Lists ===== */
 p, ul {
-  font-size: 1rem;
-  margin: 10px 0;
-  text-align: center;
+  font-size: 1rem; /* Standard font size */
+  margin: 10px 0; /* Vertical spacing */
+  text-align: center; /* Center-align text */
 }
 
 ul {
-  list-style-position: inside;
+  list-style-position: inside; /* List bullets inside the box */
 }
 
 ul li {
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* Spacing between list items */
 }
 
-/* Images */
+/* ===== Image Styling ===== */
 section img {
-  display: block;
-  margin: 20px auto;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  max-width: 90%;
+  display: block; /* Make images block elements */
+  margin: 20px auto; /* Center the image with top margin */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  max-width: 90%; /* Responsive width */
 }
 
-/* Buttons */
+/* ===== Reusable Button Style ===== */
 .btn {
-  display: inline-block;
-  margin: 15px auto;
-  padding: 10px 20px;
-  background-color: #ff704d;
-  color: white;
-  font-weight: bold;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block; /* Button behavior */
+  margin: 15px auto; /* Center with margin */
+  padding: 10px 20px; /* Button padding */
+  background-color: #ff704d; /* Orange color */
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+  border-radius: 10px; /* Rounded edges */
+  text-decoration: none; /* Remove underline */
+  transition: background 0.3s ease, transform 0.2s ease; /* Hover effects */
 }
 
 .btn:hover {
-  background-color: #d9532f;
-  transform: scale(1.05);
+  background-color: #d9532f; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
 }
 
-/* Video Section */
+/* ===== Video Embed Section Styling ===== */
 .video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  margin: 20px auto;
-  border-radius: 12px;
-  max-width: 90%;
+  position: relative; /* For absolute child */
+  padding-bottom: 56.25%; /* Aspect ratio for 16:9 */
+  height: 0; /* Zero height (will be filled by iframe) */
+  overflow: hidden; /* Hide overflow */
+  margin: 20px auto; /* Center with spacing */
+  border-radius: 12px; /* Rounded edges */
+  max-width: 90%; /* Responsive size */
 }
 
 .video-container iframe {
-  position: absolute;
+  position: absolute; /* Fill parent */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border: none;
+  border: none; /* No border */
 }
 
-/* Nutrition Section */
+/* ===== Nutrition Info Styling ===== */
 .nutrition-list {
-  list-style: none;
+  list-style: none; /* Remove bullets */
   padding-left: 0;
-  text-align: center;
+  text-align: center; /* Center align list */
 }
 
 .nutrition-list li {
-  margin-bottom: 6px;
+  margin-bottom: 6px; /* Spacing between nutrition items */
 }
 
-/* Footer */
+/* ===== Footer Section ===== */
 .thank-you-footer {
-  background-color: #ff9966;
-  color: white;
-  text-align: center;
-  padding: 30px 20px;
-  margin-top: 50px;
-  border-top: 5px solid #e67845;
+  background-color: #ff9966; /* Bright footer color */
+  color: white; /* White text */
+  text-align: center; /* Center align */
+  padding: 30px 20px; /* Spacing inside */
+  margin-top: 50px; /* Space above footer */
+  border-top: 5px solid #e67845; /* Top border */
 }
 
 .italic-text {
-  font-style: italic;
+  font-style: italic; /* Italic utility class */
 }
 
 footer .btn {
-  margin-top: 15px;
+  margin-top: 15px; /* Space above footer button */
 }
 
 footer p {
-  margin-top: 10px;
-  font-size: 0.95rem;
+  margin-top: 10px; /* Space above footer text */
+  font-size: 0.95rem; /* Slightly smaller font */
 }
 
-/* Responsive Design */
+/* ===== Responsive Design: For Screens Smaller Than 768px ===== */
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: column; /* Stack navbar vertically */
     align-items: center;
     gap: 15px;
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: column; /* Stack nav links */
     gap: 10px;
     margin-top: 10px;
   }
 
   .card-box {
-    padding: 20px 15px;
+    padding: 20px 15px; /* Adjust padding for smaller screens */
   }
 
   section img {
-    width: 100%;
+    width: 100%; /* Make images fully responsive */
   }
 }
