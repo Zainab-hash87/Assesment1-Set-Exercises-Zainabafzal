@@ -12,14 +12,14 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* Header styles */
 header {
   background-color: #17072b;
   color: #FFFFFF;
-  padding: 20px 0;
-  
+   padding: 20px 0;
 }
 
 .header-content {
@@ -42,22 +42,24 @@ h1 {
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 20px;
+  justify-content: center; /* Centering the navigation */
+  gap: 25px; /* More space between the items */
 }
 
 nav a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 22px; /* Increased font size for better visibility */
 }
 
 /* Main content layout */
 main {
   display: flex;
-   max-width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: white;
-  margin-bottom: 20px; /* Add space between main content and footer */
+  margin-bottom: 20px;
+  padding: 20px 15px; /* Slightly reduced padding */
 }
 
 /* Welcome section */
@@ -73,7 +75,7 @@ main {
   font-weight: 700;
   text-decoration: underline;
   margin-bottom: 20px;
-  font-size: 1.8rem;
+  font-size: 1.9rem; /* Slightly reduced font size */
 }
 
 .welcome p {
@@ -83,20 +85,22 @@ main {
 
 .welcome img {
   width: 100%;
-  height: 300px;
+  height: 350px; /* Reduced height slightly */
   object-fit: cover;
-  margin-top: auto;
+  margin-top: 10px; /* Slightly reduced margin */
 }
 
-/* Line Up sidebar - making it equal height with welcome section */
-.lineup {
-  flex: 1;
+/* Line Up sidebar */
+ .lineup {
   background-color: #172d67;
   color: #FFFFFF;
   padding: 20px;
+  width: 380px; /* Reduced width a bit */
+  margin: 20px;
+  border-radius: 0px; /* Sharp borders */
   display: flex;
   flex-direction: column;
-
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .lineup h2 {
@@ -130,7 +134,7 @@ main {
 
 .lineup-images img {
   width: calc(50% - 5px);
-  height: 180px;
+  height: 200px; /* Slightly reduced image height */
   object-fit: cover;
 }
 
@@ -139,6 +143,9 @@ footer {
   background-color: #8c15e9;
   color: #FFFFFF;
   text-align: center;
-  padding: 10px 0;
-
+  padding: 20px 0; /* Increased padding for a wider footer */
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
