@@ -1,44 +1,52 @@
+/* This will apply to ALL divs on the page */
 div {
-  display: inline-block;
-  font-family: sans-serif;
-  font-size: 20px;
-  margin: 25px;
-  border: 4px solid black;
-  line-height: 100px;
-  text-align: center;
-  width: 200px;
-  height: 200px;
+  display: inline-block; /* Makes all divs sit in one horizontal row */
+  font-family: sans-serif; /* Clean, modern text */
+  font-size: 20px; /* Slightly bigger text for readability */
+  margin: 25px; /* Space around each box */
+  border: 4px solid black; /* Basic black border (can be overridden later) */
+  line-height: 100px; /* Controls the height of each line inside the box */
+  text-align: center; /* Keeps text centered horizontally */
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
 }
 
+/* Styling for the <body> element */
 body {
-  margin: 100px auto;
-  width: max-content;
+  margin: 100px auto; /* Adds space at the top and centers the whole body horizontally */
+  width: max-content; /* Body takes up only as much space as needed */
 }
 
+/* Styling only for the div with id="A" */
 div#A {
-  background-color: #ffffff; 
-  border: 4px solid #8a2be2;
-  box-shadow: 10px 10px 10px #ff0000e8; 
+  background-color: #ffffff; /* White background */
+  border: 4px solid #8a2be2; /* Purple/violet border */
+  box-shadow: 10px 10px 10px #ff0000e8; /* Red drop shadow that looks 3D */
 }
 
+/* Styling only for the div with id="B" */
 div#B {
-  background-color: #ffffff; 
-  border: 4px solid #4dff00; 
-  box-shadow: inset 10px 10px 10px #000000d2; 
+  background-color: #ffffff; /* White background again for consistency */
+  border: 4px solid #4dff00; /* Neon green border */
+  box-shadow: inset 10px 10px 10px #000000d2; /* Shadow inside the box — gives a "pressed" effect */
 }
 
+/* Styling only for the div with id="C" */
 div#C {
-  background-color: #ffffff; 
-  border: 6px solid #0051ff;
-  border-radius: 20px; 
+  background-color: #ffffff; /* Again, keeping background white */
+  border: 6px solid #0051ff; /* Bold blue outer border */
+  border-radius: 20px; /* Rounded corners — makes it look bubbly */
   box-shadow:
-    inset 0 0 0 4px #ffa500,
-    0 0 0 6px #ff0000, 
-    0 0 0 12px #03a821; 
+    inset 0 0 0 4px #ffa500, /* First inner orange ring */
+    0 0 0 6px #ff0000,       /* Red ring outside the border */
+    0 0 0 12px #03a821;      /* Green outer glow — triple border effect! */
 }
 
-div#D {
-  background-color: #ffffff; 
-  border: 4px solid #b30940; 
-  text-shadow: 3px 3px 3px #000000fb;
+/* Styling only for the div with id="D" */
+#D {
+  border: 4px solid brown; /* Solid brown border */
+  color: black; /* Text color is black */
+  text-shadow: 5px 7px 0.5px black; /* Creates a strong shadow behind text */
+  filter: blur(0.7px); /* Adds a subtle blur to the whole div — looks dreamy or ghostly */
+  padding: 10px; /* Adds inner space inside the box so the text doesn't touch the edges */
 }

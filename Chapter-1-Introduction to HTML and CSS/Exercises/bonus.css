@@ -41,7 +41,7 @@ body {
   margin-bottom: 40px;           /* Space between cards */
   backdrop-filter: blur(8px);    /* Adds frosted-glass effect */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Deep shadow */
-  animation: fadeIn 1.5s ease-in-out; /* Smooth entrance animation */
+  animation: fadeIn 2.5s ease-in-out; /* Smooth entrance animation */
 }
 
 /* ===== Tables (HTML & CSS Reference Tables) ===== */

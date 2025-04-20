@@ -42,13 +42,14 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
   margin-bottom: 40px; /* Space between cards */
   text-align: center; /* Center content */
-  animation: popIn 0.6s ease forwards; /* Pop-in animation on load */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+  animation: popIn 5.0s ease forwards; /* Pop-in animation on load */
+  transition: transform 1.0s ease, box-shadow 0.3s ease; /* Smooth hover effects */
 }
 
 /* ===== Card Hover Effect ===== */
-.card-box:hover {
-  transform: translateY(-6px) scale(1.02); /* Lifts and scales slightly */
+.card-box:hover
+ {
+  transform: translateY(6px) scale(5.5); /* Lifts and scales slightly */
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12); /* Stronger shadow on hover */
 }
 
