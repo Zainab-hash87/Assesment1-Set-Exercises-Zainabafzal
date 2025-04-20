@@ -79,17 +79,22 @@ main {
   width: 100%;
   max-height: 300px;
   object-fit: cover;
-  border: 2px solid #17072b;
-  border-radius: 5px;
+  border: 2px solid #17072b; /* Dark purple border */
+  border-radius: 0; /* Straight edges */
 }
 
-/* Line Up sidebar - PERFECTED SECTION */
+/* Line Up sidebar - PERFECTLY MATCHED BORDERS */
 .lineup {
   flex: 1;
   background-color: #172d67;
   color: #FFFFFF;
   padding: 20px;
-  height: fit-content;
+  border: 2px solid #17072b; /* Same as welcome image */
+  border-radius: 0; /* Straight edges */
+  margin-bottom: 20px;
+  min-height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
 }
 
 .lineup h2 {
@@ -105,22 +110,22 @@ main {
   margin-bottom: 20px;
 }
 
-/* UPDATED IMAGE STYLING - CLEAN & SIMPLE */
+/* Image styling - NO BORDERS */
 .lineup-images {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  gap: 4px; /* Your perfect subtle spacing */
+  gap: 4px;
+  margin-top: auto;
 }
 
 .lineup-images img {
-  width: calc(50% - 2px); /* Compensates for gap */
+  width: calc(50% - 2px);
   max-width: 200px;
   height: auto;
   object-fit: cover;
-  border: 2px solid #8c15e9;
-  border-radius: 8px;
+  border: none; /* Removed purple border completely */
 }
 
 /* Footer styles */
