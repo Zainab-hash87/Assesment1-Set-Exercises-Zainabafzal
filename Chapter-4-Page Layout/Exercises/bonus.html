@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Study Planner - Web Development Module</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Header section with title -->
+    <header>
+        <h1>Study Planner</h1>
+        <p>Web Development Module - Creative Computing</p>
+    </header>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tasks">Tasks</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Left column for study tasks -->
+        <section class="column tasks">
+            <h2>Study Tasks</h2>
+            <!-- Demo item 1 -->
+            <article class="task-item">
+                <h3>HTML Semantics</h3>
+                <p>Learn about semantic HTML elements and their importance.</p>
+                <p><strong>Due:</strong> 2025-04-25</p>
+            </article>
+            <!-- Demo item 2 -->
+            <article class="task-item">
+                <h3>CSS Flexbox</h3>
+                <p>Practice building layouts using CSS Flexbox.</p>
+                <p><strong>Due:</strong> 2025-04-28</p>
+            </article>
+            <!-- Demo item 3 -->
+            <article class="task-item">
+                <h3>JavaScript Basics</h3>
+                <p>Study JavaScript variables and functions.</p>
+                <p><strong>Due:</strong> 2025-05-01</p>
+            </article>
+        </section>
+
+        <!-- Right column for additional info -->
+        <section class="column resources">
+            <h2>Resources</h2>
+            <!-- Demo item 4 -->
+            <article class="resource-item">
+                <h3>W3Schools</h3>
+                <p>Comprehensive tutorials on HTML, CSS, and JavaScript.</p>
+            </article>
+            <!-- Demo item 5 -->
+            <article class="resource-item">
+                <h3>MDN Web Docs</h3>
+                <p>Official documentation for web development technologies.</p>
+            </article>
+            <!-- Button for adding new tasks (non-interactive) -->
+            <button>Add New Task</button>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Creative Computing. All rights reserved.</p>
+    </footer>
 </body>
 </html>
