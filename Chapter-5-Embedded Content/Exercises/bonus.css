@@ -1,0 +1,97 @@
+/* === Global Body Styling === */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://img.freepik.com/premium-psd/png-rectangular-decal-with-patterns-musical-notes-with-s-creative-neon-y2k-shape-decorativep_1020495-368908.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  /* === Header === */
+  header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #ff69b4;
+    text-shadow: 0 0 10px #ff69b4;
+    margin: 0;
+  }
+  
+  /* === Soundboard Grid === */
+  .soundboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+  }
+  
+  /* === Sound Button Cards === */
+  .sample {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 1.5rem;
+    padding: 2rem 1.2rem;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .sample:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  /* === Active Clicked Button === */
+  .sample.active {
+    background: rgba(255, 105, 180, 0.2);
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.9);
+    transform: scale(1.08);
+    animation: pulse 1.2s infinite;
+  }
+  
+  /* === Inner Text Styling === */
+  .sample .number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+  }
+  
+  .sample .duration {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+  }
+  
+  /* === Entry Animation === */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* === Pulse Animation for Active === */
+  @keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(255, 105, 180, 0.4); }
+    50% { box-shadow: 0 0 35px rgba(255, 105, 180, 1); }
+    100% { box-shadow: 0 0 15px rgba(255, 105, 180, 0.4); }
+  }
+  
