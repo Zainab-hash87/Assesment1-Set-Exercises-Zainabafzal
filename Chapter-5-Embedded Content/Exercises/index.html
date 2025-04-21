@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+ <!-- This is the title that shows in the browser tab -->
     <title>Embed Video Exercise</title>
+    
+<!-- Linking an external CSS file named 'style.css' to style this page -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+  <!-- This div is used to wrap the video element.
+     Helps in positioning/styling the video easily with CSS -->
     <div class="video-container">
+
         <!-- 
-            Video Element with:
-            - loop attribute to make it loop continuously
-            - poster attribute for the thumbnail image
-            - controls to allow user interaction
+            Video tag to embed a playable video in the webpage 
+            
+            Attributes:
+            - controls: gives play, pause, volume buttons etc.
+            - loop: makes the video repeat forever (like a boomerang vibe!)
+            - poster: the image you see before the video plays (like a thumbnail!)
         -->
         <video 
             controls
             loop
-            poster="the-lover-poster.jpg">
-            <source src="THE LOVERS  Official Trailer - Studio Heartbreak (1080p, h264).mp4" type="video/mp4">
-           
+            poster="Chup_Chup_Ke_poster.jpg">
+
+            <!-- This <source> tag points to the actual video file to be played.
+                 It also declares the format so the browser knows how to handle it -->
+            <source 
+                src="Chup Chup Ke  Netflix India - Netflix India (1080p, h264).mp4" 
+                type="video/mp4">
         </video>
     </div>
+
 </body>
 </html>
