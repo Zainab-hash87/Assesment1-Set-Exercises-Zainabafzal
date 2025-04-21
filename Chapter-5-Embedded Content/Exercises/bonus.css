@@ -1,73 +1,82 @@
-/* === Global Body Styling === */
+
+/* Sets a fun musical background and centers everything vertically and horizontally */
 body {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('https://img.freepik.com/premium-psd/png-rectangular-decal-with-patterns-musical-notes-with-s-creative-neon-y2k-shape-decorativep_1020495-368908.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-    display: flex;
+    margin: 0; /* Removes default spacing */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+    background: url('https://img.freepik.com/premium-psd/png-rectangular-decal-with-patterns-musical-notes-with-s-creative-neon-y2k-shape-decorativep_1020495-368908.jpg') 
+      no-repeat center center fixed; /* Cool background image that's fixed while scrolling */
+    background-size: cover; /* Ensures image fills entire screen */
+    color: #fff; /* White text for readability on dark background */
+    display: flex; /* Flexbox for vertical layout */
     flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2rem;
+    align-items: center; /* Horizontally center all content */
+    min-height: 100vh; /* Full height of viewport */
+    padding: 2rem; /* Breathing space around content */
   }
   
   /* === Header === */
+  /* Makes the top section visually pop with a soft glowing card look */
   header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     padding: 1.2rem 2rem;
-    border-radius: 1rem;
+    border-radius: 1rem; /* Soft rounded edges */
     margin-bottom: 2rem;
-    box-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+    box-shadow: 0 0 15px rgba(255, 20, 147, 0.6); /* Pink glow */
   }
   
+  /* Main title text styling */
   h1 {
     font-size: 2.5rem;
-    color: #ff69b4;
-    text-shadow: 0 0 10px #ff69b4;
+    color: #ff69b4; /* Hot pink color */
+    text-shadow: 0 0 10px #ff69b4; /* Glowy effect behind text */
     margin: 0;
   }
   
   /* === Soundboard Grid === */
+  /* Flexible responsive layout for sound buttons */
   .soundboard {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
     justify-content: center;
-    gap: 1.5rem;
-    max-width: 1200px;
+    gap: 1.5rem; /* Space between items */
+    max-width: 1200px; /* Keeps layout from stretching too wide */
   }
   
   /* === Sound Button Cards === */
+  /* Stylish, glassy-looking buttons that look like floating tiles */
   .sample {
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.1); /* Light glassy white background */
+    border: 2px solid #fff; /* White outline */
     border-radius: 1.5rem;
     padding: 2rem 1.2rem;
     width: 200px;
     color: #fff;
     text-align: center;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    backdrop-filter: blur(8px);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
-    animation: fadeIn 0.5s ease-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animations */
+    backdrop-filter: blur(8px); /* Adds blurry glass effect */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15); /* Subtle shadow for depth */
+    animation: fadeIn 0.5s ease-in; /* Entry animation when page loads */
   }
   
+  /* === Hover Effect for Buttons === */
+  /* Makes the button react when hovered (feel interactive) */
   .sample:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 105, 180, 0.8);
-    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05); /* Slight zoom in */
+    box-shadow: 0 0 25px rgba(255, 105, 180, 0.8); /* Brighter glow on hover */
+    background: rgba(255, 255, 255, 0.15); /* Slightly stronger background */
   }
   
   /* === Active Clicked Button === */
+  /* Special styling for the currently active/playing button */
   .sample.active {
-    background: rgba(255, 105, 180, 0.2);
-    box-shadow: 0 0 30px rgba(255, 105, 180, 0.9);
-    transform: scale(1.08);
-    animation: pulse 1.2s infinite;
+    background: rgba(255, 105, 180, 0.2); /* More visible pink tint */
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.9); /* Bright glow to indicate activity */
+    transform: scale(1.08); /* Zooms in a bit more */
+    animation: pulse 1.2s infinite; /* Animated glowing pulse effect */
   }
   
-  /* === Inner Text Styling === */
+  /* === Text inside the buttons === */
   .sample .number {
     display: block;
     font-size: 1.5rem;
@@ -75,20 +84,29 @@ body {
     margin-bottom: 0.4rem;
   }
   
+  /* Duration shown under the sample name */
   .sample .duration {
     display: block;
     font-size: 0.85rem;
     margin-top: 0.5rem;
-    opacity: 0.8;
+    opacity: 0.8; /* Slight transparency for a sleek look */
   }
   
-  /* === Entry Animation === */
+  /* === Entry Fade Animation === */
+  /* Makes each button gently fade and slide into view on page load */
   @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { 
+      opacity: 0; 
+      transform: translateY(15px); 
+    }
+    to { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
   }
   
-  /* === Pulse Animation for Active === */
+  /* === Glowing Pulse Animation === */
+  /* Used for the 'active' button to give a pulsing glow effect */
   @keyframes pulse {
     0% { box-shadow: 0 0 15px rgba(255, 105, 180, 0.4); }
     50% { box-shadow: 0 0 35px rgba(255, 105, 180, 1); }

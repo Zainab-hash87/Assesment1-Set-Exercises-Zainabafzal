@@ -1,34 +1,42 @@
+// Wait until the whole page (HTML and CSS) has fully loaded
 document.addEventListener('DOMContentLoaded', function () {
-    // Select all elements with the class 'sample'
+
+    // Grabing all elements with the class 'sample' (these are your clickable sound buttons)
     const samples = document.querySelectorAll('.sample');
 
-    // Loop through each sample button
+    // Going through each of those sound buttons
     samples.forEach(sample => {
+
+        // Adding a click event to each one
         sample.addEventListener('click', function () {
-            // Get the ID of the audio to play from data-sound attribute
+
+            // Grabing the ID of the sound to play (e.g., "dan", "ah-ha") from the button's data attribute
             const soundId = this.getAttribute('data-sound');
+
+            // Finding the <audio> element that has that ID
             const audioToPlay = document.getElementById(soundId);
 
-            // Pause all currently playing audio and reset them to start
+            // Pause any currently playing audio so that only one plays at a time
             document.querySelectorAll('audio').forEach(audio => {
                 if (!audio.paused) {
-                    audio.pause();
-                    audio.currentTime = 0;
+                    audio.pause();         // Stop the audio
+                    audio.currentTime = 0; // Rewind it back to the beginning
                 }
             });
 
-            // Play the selected audio clip
+            // Play the audio clip that matches the clicked button
             if (audioToPlay) {
                 audioToPlay.play();
             }
 
-            // Add a visual effect when clicked
+            // Add a CSS class called 'active' to this button to trigger a visual animation or style
             this.classList.add('active');
 
-            // Remove the "active" class after a short delay 
+            // After 200 milliseconds, remove the 'active' class to reset the style
             setTimeout(() => {
                 this.classList.remove('active');
             }, 200);
         });
     });
+
 });
