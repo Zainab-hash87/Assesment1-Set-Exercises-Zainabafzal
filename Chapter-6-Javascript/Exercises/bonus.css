@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
 
-/* 🌌 Styling the body of the webpage */
+/*  Styling the body of the webpage */
 body {
   font-family: 'Orbitron', sans-serif; /* Cool techy font for a digital feel */
   background: radial-gradient(circle, #0f0f0f, #000000); /* Dark gradient background */
@@ -16,7 +16,7 @@ body {
 }
 
 
-/* 🎮 The main game box */
+/*  The main game box */
 .game-container {
   background: rgba(255, 255, 255, 0.05); /* Transparent glass effect */
   backdrop-filter: blur(10px); /* Blur the background for frosted glass look */
@@ -35,7 +35,7 @@ body {
 }
 
 
-/* ✨ Fade-in animation for the container */
+/*  Fade-in animation for the container */
 @keyframes fadeInMain {
   to {
     opacity: 1;
@@ -45,13 +45,13 @@ body {
 
 
 
-/* 🌈 Rainbow title styling (R, G, B) */
+/*  Rainbow title styling (R, G, B) */
 .rainbow-title span:nth-child(1) { color: #ff0055; } /* Red */
 .rainbow-title span:nth-child(2) { color: #00ff88; } /* Green */
 .rainbow-title span:nth-child(3) { color: #4488ff; } /* Blue */
 
 
-/* 🎨 The rest of the title in white with little spacing */
+/*  The rest of the title in white with little spacing */
 .rainbow-title span:nth-child(n+4) {
   color: white;
   margin-left: 5px;
@@ -65,7 +65,7 @@ body {
 }
 
 
-/* 👇 Animation to make title slide down when page loads */
+/*  Animation to make title slide down when page loads */
 @keyframes slideDown {
   from {
     transform: translateY(-40px);
@@ -77,7 +77,7 @@ body {
   }
 }
 
-/* 🎯 RGB color to guess */
+/*  RGB color to guess */
 #rgb-value {
   font-size: 22px;
   font-weight: bold;
@@ -87,20 +87,20 @@ body {
   opacity: 0;
 }
 
-/* ❤️ Lives, 🧠 Feedback, and 📊 Score styles */
+/*  Lives,  Feedback, and  Score styles */
 #lives, #score, #feedback {
   opacity: 0;
   animation: fadeIn 1.5s ease-in 0.6s forwards;
 }
 
-/* 🌀 Fade-in animation */
+/*  Fade-in animation */
 @keyframes fadeIn {
   to {
     opacity: 1;
   }
 }
 
-/* 🎨 Color options container (boxes are inside this) */
+/*  Color options container (boxes are inside this) */
 .color-options {
   display: flex;
   justify-content: center;
@@ -110,7 +110,7 @@ body {
   animation: popUp 1.5s ease-in-out 0.8s forwards;
 }
 
-/* 🎉 Pop-up animation for the color boxes */
+/*  Pop-up animation for the color boxes */
 @keyframes popUp {
   0% {
     opacity: 0;
@@ -122,9 +122,9 @@ body {
   }
 }
 
-/* 🟪 Individual color boxes */
+/* Individual color boxes */
 .color-box {
-  width: 60px;  /* 👈 Normal size box */
+  width: 60px;  /*  Normal size box */
   height: 60px;
   border-radius: 10px;
   border: 2px solid #ccc;
@@ -132,22 +132,22 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-/* 🖱️ Glow effect when hovering on a color box */
+/*  Glow effect when hovering on a color box */
 .color-box:hover {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
-/* ✅ Highlight for correct answer */
+/*  Highlight for correct answer */
 .correct {
   box-shadow: 0 0 10px #00ff00;
 }
 
-/* ❌ Highlight for wrong answer */
+/*  Highlight for wrong answer */
 .wrong {
   box-shadow: 0 0 10px #ff0000;
 }
 
-/* 💬 Feedback area style */
+/*  Feedback area style */
 #feedback {
   height: 30px;
   font-size: 18px;
@@ -155,7 +155,7 @@ body {
   transition: all 0.3s ease;
 }
 
-/* 📊 Score styling */
+/*  Score styling */
 #score {
   font-size: 20px;
   color: #00ffcc;
@@ -163,7 +163,7 @@ body {
   margin-bottom: 20px;
 }
 
-/* 🔁 Replay button style */
+/*  Replay button style */
 #replay-btn {
   background: linear-gradient(90deg, #00f2ff, #00ff88);
   color: #000;
@@ -178,7 +178,7 @@ body {
   animation: slideUp 1.2s ease-in-out forwards;
 }
 
-/* 🎥 Slide-up animation for replay button */
+/*  Slide-up animation for replay button */
 @keyframes slideUp {
   from {
     opacity: 0;
@@ -190,7 +190,7 @@ body {
   }
 }
 
-/* 🔁 Replay button hover effect */
+/*  Replay button hover effect */
 #replay-btn:hover {
   background: linear-gradient(90deg, #00c4ff, #00ffaa);
   transform: scale(1.05);
